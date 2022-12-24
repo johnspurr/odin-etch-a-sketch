@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.grid-container {
+}
+
+.grid-row {
+    display: flex;
+    margin-bottom: -1px;
+}
+
+.grid-cell + .grid-cell {
+    margin-left: -1px;
+}
+
+.grid-cell {
+    width:40px;
+    height:40px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.black {
+    background-color: black;
+}
