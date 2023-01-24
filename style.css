@@ -4,22 +4,23 @@
     box-sizing: border-box;
 }
 
-.grid-container {
+#grid-container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-row {
     display: flex;
-    margin-bottom: -1px;
+    flex: 1;
 }
 
 .grid-cell + .grid-cell {
-    margin-left: -1px;
 }
 
 .grid-cell {
-    width:40px;
-    height:40px;
-    border: 1px solid black;
+    flex: 1;
     background-color: lightblue;
 }
 
