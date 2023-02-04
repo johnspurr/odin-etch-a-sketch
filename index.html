@@ -5,18 +5,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Sketch!</title>
+    <link rel="icon" type="image/x-ico" href="favicon.ico"/>
 </head>
 <body>
-    <div id="header">
-        <h1>Sketch!</h1>
-    </div>
-    <div id="grid-container"></div>
-    <div id="color-control"></div>
-    <div id="controls">
-        <div id="size-control"
-            <label for="grid-size">Grid size: </label>
-            <input type="number" id="grid-size" name="grid-size" step="1" min="0" max="100" value="16">
-            <button id="reset">New Grid</button>
+    <div id="container">
+        <div id="etch-a-sketch">
+            <div id="header">
+                <h1>Sketch!</h1>
+            </div>
+            <div id="grid-container"></div>
+            <div id="controls">
+                <div id="color-picker">
+                    <div id="red" class="color red"></div>
+                    <div id="orange" class="color orange"></div>
+                    <div id="yellow" class="color yellow"></div>
+                    <div id="green" class="color green"></div>
+                    <div id="blue" class="color blue"></div>
+                    <div id="purple" class="color purple"></div>
+                    <div id="black" class="color black"></div>
+                    <div id="white" class="color white"></div>
+                </div>
+                <div id="size-control">
+                    <label for="grid-size">Size (1-100): </label>
+                    <input type="number" id="grid-size" name="grid-size" step="1" min="1" max="100" value="16">
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -2,13 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: salmon;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#etch-a-sketch {
+    margin: 0px 24px;
+    max-width: 800px;
+    flex: auto;
 }
 
 #grid-container {
-    width: 600px;
-    height: 600px;
+    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
+    border: solid 2px lightgoldenrodyellow;
 }
 
 .grid-row {
@@ -22,8 +40,95 @@
 .grid-cell {
     flex: 1;
     background-color: lightblue;
+    cursor: crosshair;
 }
 
 .black {
     background-color: black;
+}
+
+#color-picker {
+    display: inline-block;
+    font-size: 0;
+}
+
+#controls {
+    padding-left: 2px;
+    margin-top: 10px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+#size-control {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+    justify-self: flex-end;
+}
+
+#reset {
+    border-radius: 0;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 4px;
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+}
+
+.color {
+    display: inline-block;
+    flex: 0 0 1;
+    border: solid 2px black;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#grid-size {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: dotted underline;
+    border: none;
+    text-align: right;
+    width: 3em;
+    background-color: lightblue;
+}
+
+.color {
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;   
+}
+
+.green {
+    background-color: limegreen;
+}
+
+.blue {
+    background-color: blue
+}
+
+.purple {
+    background-color: blueviolet;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
 }
